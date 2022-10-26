@@ -18,8 +18,11 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@coinbase/wallet-sdk": "^3.5.3",
+    "ethers": "^5.7.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "web3modal": "^1.9.9",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

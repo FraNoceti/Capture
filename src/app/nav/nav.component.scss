@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Adobe Jenson;
+    src: url(../../assets/Adobe.otf);
+}
+
+* {
+    background-color:transparent;
+}
+
+.nav {
+    width: 80vw;
+    margin: auto;
+    color: white;
+    font-family: Adobe Jenson;
+}
+
+.logo {
+    font-size: 28px;
+    margin-top: 10px;
+}

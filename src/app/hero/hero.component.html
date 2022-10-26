@@ -1,0 +1,32 @@
+<div class="title">Redeem your Future NFT</div>
+<div class="box">
+  <div class="left">
+    <div class="val">
+      <p *ngIf="!walletConnected" class="fvalue">Future Value:</p>
+      <p *ngIf="walletConnected" class="no">No "Future NFT" detected in your wallet. Purchase one.</p>
+    </div>
+    <div *ngIf="!walletConnected" class="t">
+      <p class="time">Time remaining:</p>
+      <p class="tvalue">XX/XX/XX 00:00</p>
+    </div>
+    <button *ngIf="!walletConnected" class="redeem">Redeem your BTC</button>
+    <button *ngIf="walletConnected" class="nredeem">Redeem your BTC</button>
+  </div>
+  <div class="right">
+    <img src="../../assets/Metamask-icon.png" alt="" />
+    <button
+      *ngIf="!walletConnected"
+      class="connect"
+      (click)="connectToWallet()"
+    >
+      Connect your Wallet
+    </button>
+
+    <div
+      *ngIf="walletConnected"
+      class="connected"
+    >
+      <label class="text-white">{{ walletId }}</label>
+    </div>
+  </div>
+</div>
