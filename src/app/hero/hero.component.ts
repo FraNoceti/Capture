@@ -7,8 +7,6 @@ import { WalletService } from '../services/wallet.service';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent implements OnInit {
-  title = 'ng-connect-ethereum-wallet';
-
   public walletConnected: boolean = false;
   public walletId: string = '';
 
@@ -25,7 +23,6 @@ export class HeroComponent implements OnInit {
       this.walletId = accounts[0];
     }
   };
-
   ngOnInit(): void {
     this.checkWalletConnected();
   }

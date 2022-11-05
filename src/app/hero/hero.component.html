@@ -3,7 +3,9 @@
   <div class="left">
     <div class="val">
       <p *ngIf="!walletConnected" class="fvalue">Future Value:</p>
-      <p *ngIf="walletConnected" class="no">No "Future NFT" detected in your wallet. Purchase one.</p>
+      <p *ngIf="walletConnected" class="no">
+        No "Future NFT" ACTIVE detected in your wallet. Purchase one.
+      </p>
     </div>
     <div *ngIf="!walletConnected" class="t">
       <p class="time">Time remaining:</p>
@@ -22,10 +24,7 @@
       Connect your Wallet
     </button>
 
-    <div
-      *ngIf="walletConnected"
-      class="connected"
-    >
+    <div *ngIf="walletConnected" class="connected">
       <label class="text-white">{{ walletId }}</label>
     </div>
   </div>
