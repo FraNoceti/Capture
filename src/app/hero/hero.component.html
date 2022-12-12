@@ -4,7 +4,10 @@
     <div class="val">
       <p *ngIf="!walletConnected" class="fvalue">Future Value:</p>
       <p *ngIf="walletConnected" class="no">
-        No "Future NFT" ACTIVE detected in your wallet. Purchase one.
+        Click the button below to ask for your redeem.
+      </p>
+      <p *ngIf="BTCrequest" class="req">
+        We're processing your request.
       </p>
     </div>
     <div *ngIf="!walletConnected" class="t">
@@ -12,7 +15,7 @@
       <p class="tvalue">XX/XX/XX 00:00</p>
     </div>
     <button *ngIf="!walletConnected" class="redeem">Redeem your BTC</button>
-    <button *ngIf="walletConnected" class="nredeem">Redeem your BTC</button>
+    <button *ngIf="walletConnected" class="nredeem" (click)="requestBTC()">Redeem your BTC</button>
   </div>
   <div class="right">
     <img src="../../assets/Metamask-icon.png" alt="" />

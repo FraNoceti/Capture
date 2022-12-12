@@ -74,6 +74,18 @@
     width: 60vw;
   }
 }
+.req {
+  font-family: SFproSB;
+  font-size: 22px;
+  text-align: center;
+  width: 20vw;
+  height: auto;
+  margin: auto;
+  @media (max-width: 850px) {
+    font-size: 18px;
+    width: 60vw;
+  }
+}
 
 .t {
   display: flex;
@@ -118,15 +130,15 @@
   }
 }
 .nredeem {
-  width: 200px;
+  width: 220px;
   border-radius: 12px;
-  color: rgb(78, 77, 77);
+  color: rgb(255, 255, 255);
   background-color: transparent;
-  border: 1px solid grey;
+  border: 1px solid rgb(255, 255, 255);
   font-size: 22px;
   font-family: SFproM;
   margin-bottom: 4vw;
-  cursor: not-allowed;
+  cursor: pointer;
   @media (max-width: 850px) {
     font-size: 18px;
   }

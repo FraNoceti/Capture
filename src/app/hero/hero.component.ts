@@ -9,6 +9,7 @@ import { WalletService } from '../services/wallet.service';
 export class HeroComponent implements OnInit {
   public walletConnected: boolean = false;
   public walletId: string = '';
+  public BTCrequest: boolean = false;
 
   constructor(private walletService: WalletService) {}
 
@@ -23,6 +24,11 @@ export class HeroComponent implements OnInit {
       this.walletId = accounts[0];
     }
   };
+
+  requestBTC = () => {
+    this.BTCrequest = true;
+    console.log("requesting")
+  }
   ngOnInit(): void {
     this.checkWalletConnected();
   }
